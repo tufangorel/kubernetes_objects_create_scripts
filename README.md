@@ -12,4 +12,4 @@ Git Bash <br/>
 ## > kubectl apply -f .\pod.yaml
 ## > kubectl apply -f .\deployment.yaml
 ## > kubectl apply -f .\replicaset.yaml
-## > kubectl.exe apply -f .\service.yaml
+## > kubectl apply -f .\service.yaml
