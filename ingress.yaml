@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: myingress
+spec:
+  rules:
+  - host: stuff-myspace.apps.gcp.burrsutter.dev
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: the-service
+          servicePort: 80
