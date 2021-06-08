@@ -26,4 +26,23 @@ $ echo 'TXlVc2VyTmFtZQ==' | base64 --decode
 $ kubectl replace -f secrets/myboot-deployment-configuration-secret.yaml
 $ kubectl delete deployment myboot
 $ kubectl delete service myboot
+$ kubectl create namespace pizzahat
+$ kubectl config set-context --current --namespace=pizzahat
+$ kubectl apply -f crds/pizza-crd.yaml
+$ kubectl get crds | grep pizza
+$ kubectl api-resources | grep pizzas
+$ kubectl apply -f crds/pizza-deployment.yaml
+$ kubectl get pods
+$ kubectl apply -f crds/cheese-pizza.yaml
+$ kubectl get pizzas
+$ kubectl describe pizza cheesep
+$ kubectl get pods
+$ kubectl logs cheesep-pod
+$ kubectl apply -f crds/meat-pizza.yaml
+$ kubectl apply -f crds/veggie-lovers.yaml
+$ kubectl get pizzas --all-namespaces
+$ kubectl delete pizzas --all
+$ kubectl delete all --all
+$ kubectl delete namespace pizzahat
+$ kubectl delete -f crds/pizza-crd.yaml
 </pre><br/>

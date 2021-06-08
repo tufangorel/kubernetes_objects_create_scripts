@@ -1,0 +1,8 @@
+apiVersion: mykubernetes.acme.org/v1beta2
+kind: Pizza
+metadata:
+  name: cheesep
+spec:
+  toppings:
+  - mozzarella
+  sauce: regular

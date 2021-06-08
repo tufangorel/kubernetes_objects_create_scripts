@@ -1,0 +1,9 @@
+apiVersion: mykubernetes.acme.org/v1beta2
+kind: Pizza
+metadata:
+  name: veggiep
+spec:
+  toppings:
+  - mozzarella
+  - black olives
+  sauce: extra
