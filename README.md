@@ -45,4 +45,32 @@ $ kubectl delete pizzas --all
 $ kubectl delete all --all
 $ kubectl delete namespace pizzahat
 $ kubectl delete -f crds/pizza-crd.yaml
+$ kubectl apply -f volumes/myboot-pod-volume.yaml
+$ kubectl get pods
+$ kubectl delete pod myboot-demo
+$ kubectl apply -f volumes/myboot-pods-volume.yaml
+$ kubectl describe pod myboot-demo
+$ kubectl delete -f volumes/myboot-pods-volume.yaml
+$ kubectl apply -f volumes/myboot-pod-volume-hostpath.yaml
+$ kubectl describe pod myboot-demo
+$ kubectl delete pod myboot-demo
+$ kubectl apply -f volumes/demo-persistent-volume-hostpath.yaml
+$ kubectl get pv
+$ kubectl apply -f volumes/myboot-persistent-volume-claim.yaml
+$ kubectl get pvc
+$ kubectl apply -f volumes/myboot-pod-volume-pvc.yaml
+$ kubectl describe pod myboot-demo
+$ kubectl delete pod myboot-demo
+$ kubectl get pvc
+$ kubectl delete -f volumes/myboot-persistent-volume-claim.yaml
+$ kubectl delete -f volumes/demo-persistent-volume-hostpath.yaml
+$ kubectl get sc
+$ kubectl apply -f volumes/demo-dynamic-persistent.yaml
+$ kubectl apply -f volumes/myboot-pod-volume-pvc.yaml
+$ kubectl get pods
+$ kubectl get pvc
+$ kubectl get pv
+$ kubectl delete -f volumes/myboot-pod-volume-pvc.yaml
+$ kubectl delete -f volumes/demo-dynamic-persistent.yaml
+
 </pre><br/>
