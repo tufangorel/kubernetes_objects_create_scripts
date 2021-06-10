@@ -72,5 +72,16 @@ $ kubectl get pvc
 $ kubectl get pv
 $ kubectl delete -f volumes/myboot-pod-volume-pvc.yaml
 $ kubectl delete -f volumes/demo-dynamic-persistent.yaml
+$ kubectl apply -f jobs/whalesay-job.yaml
+$ kubectl get pods
+$ kubectl get jobs
+$ kubectl logs whale-say-job-wbp4c
+$ kubectl delete -f jobs/whalesay-job.yaml
+$ kubectl apply -f cronjobs/whalesay-cronjob.yaml
+$ kubectl get pods
+$ kubectl get cronjobs
+$ kubectl get pods
+$ kubectl get jobs
+$ kubectl delete -f cronjobs/whalesay-cronjob.yaml
 
 </pre><br/>
