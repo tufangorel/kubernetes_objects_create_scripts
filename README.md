@@ -83,5 +83,8 @@ $ kubectl get cronjobs
 $ kubectl get pods
 $ kubectl get jobs
 $ kubectl delete -f cronjobs/whalesay-cronjob.yaml
+$ kubectl apply -f .\daemonsets\quarkus-daemonset.yaml
+$ kubectl get pods -o wide
+$ kubectl delete -f .\daemonsets\quarkus-daemonset.yaml
 
 </pre><br/>
