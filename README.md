@@ -95,5 +95,18 @@ $ kubectl get events --sort-by=.metadata.creationTimestamp
 $ kubectl scale statefulset quarkus-statefulset --replicas=2
 $ kubectl get pods
 $ kubectl delete -f statefulsets/quarkus-statefulset.yaml
+$ kubectl apply -f ingress/quarkus-demo-deployment.yaml
+$ kubectl expose deployment quarkus-demo-deployment --type=NodePort --port=8080
+$ kubectl get service quarkus-demo-deployment
+$ kubectl apply -f ingress/demo-ingress.yaml
+$ kubectl get ingress
+$ kubectl apply -f ingress/mynode-deployment.yaml
+$ kubectl expose deployment mynode-deployment --type=NodePort --port=8000
+$ kubectl apply -f ingress/demo-ingress-2.yaml
+$ kubectl delete deployment mynode-deployment
+$ kubectl delete service mynode-deployment
+$ kubectl delete deployment quarkus-demo-deployment
+$ kubectl delete service quarkus-demo-deployment
+$ kubectl delete -f ingress/demo-ingress-2.yaml
 
 </pre><br/>
