@@ -83,8 +83,17 @@ $ kubectl get cronjobs
 $ kubectl get pods
 $ kubectl get jobs
 $ kubectl delete -f cronjobs/whalesay-cronjob.yaml
-$ kubectl apply -f .\daemonsets\quarkus-daemonset.yaml
+$ kubectl apply -f daemonsets/quarkus-daemonset.yaml
 $ kubectl get pods -o wide
-$ kubectl delete -f .\daemonsets\quarkus-daemonset.yaml
+$ kubectl delete -f daemonsets/quarkus-daemonset.yaml
+$ kubectl apply -f statefulsets/quarkus-statefulset.yaml
+$ kubectl get pods
+$ kubectl get statefulsets
+$ kubectl scale statefulset quarkus-statefulset --replicas=3
+$ kubectl get pods
+$ kubectl get events --sort-by=.metadata.creationTimestamp
+$ kubectl scale statefulset quarkus-statefulset --replicas=2
+$ kubectl get pods
+$ kubectl delete -f statefulsets/quarkus-statefulset.yaml
 
 </pre><br/>
